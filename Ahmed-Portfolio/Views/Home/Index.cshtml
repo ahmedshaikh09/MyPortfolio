@@ -1,0 +1,667 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ahmed Shaikh - Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="~/lib/animate/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Main Stylesheet File -->
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <!-- JS Files for Syntax Highlighter -->
+    <script type="text/javascript" src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+
+    <!-- CSS Files for Syntax Highlighter -->
+    <link rel="stylesheet" href="~/Scripts/SyntaxHighlighter/styles/shCore.css">
+    <link rel="stylesheet" href="~/Scripts/SyntaxHighlighter/styles/shCoreDefault.css">
+
+
+</head>
+<body data-spy="scroll" data-offset="58" data-target="#navbar-main">
+    <div id="navbar-main">
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-radio-checked" style="font-size:30px; color:#1abc9c;"></span>
+                    </button>
+                    <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><span class="icon icon-radio-checked" style="font-size:18px; color:#1abc9c;"></span></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home" class="smoothscroll">Home</a></li>
+                        <li> <a href="#about" class="smoothscroll"> About</a></li>
+                        <li> <a href="#portfolio" class="smoothscroll"> Portfolio</a></li>
+                        <li> <a href="#pricing" class="smoothscroll">Skills </a></li>
+                        <li> <a href="#contact" class="smoothscroll"> Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <!-- ==== HEADERWRAP ==== -->
+    <div id="home"></div>
+    <div id="headerwrap" name="home">
+        <header class="clearfix">
+            <h1>Ahmed Shaikh</h1>
+            <p>S<span class="icon icon-radio-checked"></span>FTWARE DEVEL<span class="icon icon-radio-checked"></span>PER</p>
+            <button class="btn btn-large">
+                <a href="#about" class="smoothscroll">MORE ABOUT ME</a>
+
+            </button>
+        </header>
+    </div>
+
+    <!-- /headerwrap -->
+    <!-- ==== ABOUT ==== -->
+    <div class="container" id="about" name="about">
+        <div class="row white">
+            <br>
+            <h1 class="centered">ABOUT ME</h1>
+            <hr>
+            <div class="centered">
+
+                <div>
+                    <img class="img img-circle" src="~/img/profile-pic.jpg" height="120px" width="140px" alt="profile">
+                </div>
+                <br />
+
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/ahmed-shaikh09"><i style="font-size:25px" class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ahmedshaikh09"><i style="font-size:25px" class="fab fa-github"></i></a>
+                </div>
+
+                <div>
+                    <p class="info">
+                        I have had the experience of creating multiple responsive websites using JavaScript (ES 5 & ES 6), Html5 and CSS3. I have also been working with React for building composable user interfaces and with Node.js and Command Line to make the process of building projects as effective as possible. Always aiming for test driven development in JavaScript using Jasmine. Also, hosting my work on GitHub has always been enjoyable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="centered">
+
+
+                <img class="img img-circle" src="~/img/logo.jpg" height="120px" width="140px" alt="mitt">
+
+                <h3 class="centered">EDUCATION</h3>
+
+                <strong>Manitoba Institute of Trades and Technology</strong><br />
+                <span>Software Developer Diploma</span><br />
+                <span>2018 - 2019</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==== PORTFOLIO ==== -->
+    <div class="container" id="portfolio" name="portfolio">
+        <br>
+        <div class="row">
+            <br>
+            <h1 class="centered">PORTFOLIO</h1>
+            <hr>
+            <br>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- PORTFOLIO PROJECT 1 -->
+                <div class="col-md-4 ">
+                    <div class="grid mask">
+                        <figure>
+                            <img class="img-responsive" src="~/img/portfolio/folio01.jpg" alt="">
+                            <figcaption>
+                                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                            </figcaption>
+
+                        </figure>
+                        <div class=" centered">
+                            <h3>JavaScript Exercises</h3>
+                            <p>JavaScrip | JQuery</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- MODAL FOR JS EXERCISES.-->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Exercises</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a data-toggle="pill" href="#ex1">Exercise 1</a></li>
+                                    <li><a data-toggle="pill" href="#ex2">Exercise 2</a></li>
+                                    <li><a data-toggle="pill" href="#ex3">Exercise 3</a></li>
+                                    <li><a data-toggle="pill" href="#ex4">Exercise 4</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="ex1" class="tab-pane fade in active">
+                                        <div class="col-lg-6">
+                                            <h3>Find Values</h3>
+                                            <form class="form-1">
+                                                <div>
+                                                    <input type="number" pattern="[0-9]" id="input" placeholder="1st value.." required />
+                                                    <input type="number" pattern="[0-9]" id="input2" placeholder="2nd value.." required />
+                                                    <input type="number" pattern="[0-9]" id="input3" placeholder="3rd value.." required />
+                                                    <input type="number" pattern="[0-9]" id="input4" placeholder="4th value.." required />
+                                                    <input type="number" pattern="[0-9]" id="input5" placeholder="5th value.." required />
+                                                </div>
+                                                <br />
+                                                <button type="submit" class="btn btn-default">Sumbit</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <br />
+
+                                            Least Value: <div id="least-value">0</div><br />
+
+                                            Greatest Value: <div id="greatest-value">0</div><br />
+
+                                            Sum of Numbers: <div id="sum">0</div><br />
+
+                                            Product of Numbers: <div id="product">0</div><br />
+
+                                            Mean: <div id="mean-value">0</div><br />
+
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btn-ex1-code" class="btn btn-primary">Show Code</button>
+                                                <div id="ex1-code" style="display:none">
+                                                    <pre class="brush:js;">
+                                                        $(".form-1").submit(function (e) {
+                                                            e.preventDefault();
+
+                                                            var input = $("#input").val();
+                                                            var input2 = $("#input2").val();
+                                                            var input3 = $("#input3").val();
+                                                            var input4 = $("#input4").val();
+                                                            var input5 = $("#input5").val();
+ 
+                                                            let lowestVal = (Math.min(input, input2, input3, input4, input5));
+                                                            $("#least-value").text(lowestVal);
+
+                                                            let greatestVal = (Math.max(input, input2, input3, input4, input5));
+                                                            $("#greatest-value").text(greatestVal);
+
+
+                                                            let total = (parseInt(input) + parseInt(input2) + parseInt(input3) + parseInt(input4) + parseInt(input5));
+                                                            $("#sum").text(total);
+
+                                                            let multiply = (parseInt(input) * parseInt(input2) * parseInt(input3) * parseInt(input4) * parseInt(input5));
+                                                            $("#product").text(multiply);
+
+                                                            let mean = total / 5 ;
+                                                            $("#mean-value").text(mean);
+
+                                                        });
+
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ex2" class="tab-pane fade">
+                                        <div class="col-lg-6">
+                                            <h3>Factorial</h3>
+                                            <form class="form-2">
+                                                <div>
+                                                    <input type="number" pattern="[0-9]" id="value" placeholder="provide a value.." required />
+                                                </div>
+                                                <br />
+                                                <button type="submit" class="btn btn-default">Sumbit</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <br />
+                                            <h4> Results: </h4> <div id="factorial-value">0</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btn-ex2-code" class="btn btn-primary">Show Code</button>
+                                                <div id="ex2-code" style="display:none">
+                                                    <pre class="brush:js;">
+                                                        $(document).ready(function() {
+                                                            $(".form-2").submit(function (e) {
+                                                                e.preventDefault();
+ 
+                                                                var value = $("#value").val();
+                                                                function factorial(num) {
+
+                                                                if (parseInt(num) === 0) {
+                                                                    return 1;
+                                                                 }else{
+                                                                    return num * factorial(num - 1);
+                                                                 }
+
+                                                                let answer = factorial(value);
+                                                                $("#factorial-value").text(answer);
+
+                                                            });
+                                                        });
+                                                   </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ex3" class="tab-pane fade">
+
+                                        <div class="col-lg-6">
+                                            <h3>Buzz & FizzBuzz</h3>
+                                            <form class="form-3">
+                                                <div>
+                                                    <input type="number" id="number-1" min="1" max="100" placeholder="1st Number.." required />
+                                                    <input type="number" id="number-2" min="1" max="100" placeholder="2nd Number.." required />
+                                                </div><br />
+                                                <button type="submit" class="btn btn-default">Sumbit</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <br />
+                                            <h4> Results: </h4> <div id="fizz-buzz"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btn-ex3-code" class="btn btn-primary">Show Code</button>
+                                                <div id="ex3-code" style="display:none">
+                                                    <pre class="brush:js;">
+                                                         $(".form-3").submit(function (e) {
+                                                            e.preventDefault();
+
+
+                                                            var number1 = $("#number-1").val();
+                                                            var number2 = $("#number-2").val();
+                                                            var result = "";
+
+
+                                                            for (var i = 1; i <= 100; i++) {
+                                                                if (i % number1 === 0 && i % number2 === 0) {
+                                                                    result += "FizzBuzz  ";
+                                                                } else if (i % number1 === 0) {
+                                                                    result += "Fizz  ";
+                                                                } else if (i % number2 === 0) {
+                                                                    result += "Buzz  ";
+                                                                } else
+                                                                    result += i + "  ";
+                                                                }
+
+                                                            $("#fizz-buzz").text(result);
+
+                                                        });
+                                                   </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="ex4" class="tab-pane fade">
+                                        <div class="col-lg-6">
+                                            <h3>Palindrome</h3>
+                                            <form class="form-4">
+                                                <div>
+                                                    <input type="text" id="text" placeholder="type in a word.." required />
+                                                </div><br />
+                                                <button type="submit" class="btn btn-default">Sumbit</button>
+                                            </form>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <br />
+                                            <h4>Result:</h4> <div id="word-check"></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btn-ex4-code" class="btn btn-primary">Show Code</button>
+                                                <div id="ex4-code" style="display:none">
+                                                    <pre class="brush:js;">
+                                                        $(document).ready(function() {
+                                                            $(".form-4").submit(function (e) {
+                                                                e.preventDefault()
+
+                                                                var text = $("#text").val();
+
+                                                                function palindromeCheck(string) {
+                                                                    var lowerString = string.toLowerCase();
+                                                                    var reverseString = lowerString.split('').reverse().join(''); 
+
+                                                                    if (reverseString === lowerString) {
+                                                                        return "it is a palindrome"
+                                                                    } else {
+                                                                        return "It is not a palindrome"
+                                                                    }
+                                                                 }
+
+                                                                let result = palindromeCheck(text);
+                                                                $("#word-check").text(result);
+                                                            });
+                                                        });
+                                                  </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- PORTFOLIO PROJECT 2 -->
+                <div class="col-md-4">
+                    <div class="grid mask">
+                        <figure>
+                            <img class="img-responsive" src="~/img/portfolio/folio02.jpg" alt="">
+
+                            <figcaption>
+
+                                <a href="https://ahmedshaikh09.github.io/Arcade-Game/" class="btn btn-primary btn-lg">Play Now!</a>
+                            </figcaption>
+
+                        </figure>
+                        <div class=" centered">
+                            <h3>Arcade Game</h3>
+                            <p>HTML5 | CSS3 | JavaScript</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PORTFOLIO PROJECT 3 -->
+                <div class="col-md-4">
+                    <div class="grid mask">
+                        <figure>
+                            <img class="img-responsive" src="~/img/portfolio/folio03.jpg" alt="">
+                            <figcaption>
+
+                                <a href="https://ahmedshaikh09.github.io/Restaurant-Reviews-App-FinalProject/" class="btn btn-primary btn-lg">Take a Look</a>
+                            </figcaption>
+
+                        </figure>
+                        <div class=" centered">
+                            <h3>Resturant Reviews App</h3>
+                            <p>JavaScrip | Web APIs | Service Workers</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PORTFOLIO PROJECT 4 -->
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="grid mask">
+                        <figure>
+                            <img class="img-responsive" src="~/img/portfolio/folio04.jpg" alt="">
+
+
+                            <figcaption>
+
+                                <a href="https://github.com/ahmedshaikh09/My-Reads" class="btn btn-primary btn-lg">Check Out Code</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class=" centered">
+                            <h3>My Reads</h3>
+                            <p>React | JavaScript</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PORTFOLIO PROJECT 5 -->
+                <div class="col-md-4">
+                    <div class="grid mask">
+                        <figure>
+                            <img class="img-responsive" src="~/img/portfolio/folio05.jpg" alt="">
+                            <figcaption>
+
+                                <a href="https://ahmedshaikh09.github.io/Matching-Cards-Game/" class="btn btn-primary btn-lg">Play Now!</a>
+                            </figcaption>
+
+                        </figure>
+                        <div class=" centered">
+                            <h3>Matching Cards Game</h3>
+                            <p>JavaScrip | HTML | CSS</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PORTFOLIO PROJECT 6 -->
+                <div class="col-md-4">
+                    <div class="grid mask">
+                        <figure>
+                            <img class="img-responsive" src="~/img/portfolio/folio06.jpg" alt="">
+                            <figcaption>
+                                <h5>PHONE MOCKUP</h5>
+                                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                            </figcaption>
+
+                        </figure>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+    </div>
+
+    <!-- /container -->
+    <!-- ==== SKILLS ==== -->
+    <div class="container" id="pricing" name="pricing">
+        <br>
+        <div class="row">
+            <br>
+            <h1 class="centered">SKILLS</h1>
+            <hr>
+            <br>
+            <br>
+        </div>
+
+        <div id="greywrap">
+            <div class="row">
+                <!-- ==== SKILL-1 ==== -->
+                <div class="col-lg-4 callout">
+                    <i class="fab fa-js-square" style="font-size:100px"></i>
+                    <h2>Programmer</h2>
+                    <p>JavaScript | C# | CSS3 | HTML5
+                </div>
+
+                <!-- ==== SKILL-2 ==== -->
+                <div class="col-lg-4 callout">
+                    <i class="fas fa-users" style="font-size:100px"></i>
+                    <h2>Team Player</h2>
+                    <p>Project Management | Leadership </p>
+                </div>
+
+                <!-- ==== SKILL-3 ==== -->
+                <div class="col-lg-4 callout">
+                    <i class="fab fa-react" style="font-size:100px"></i>
+                    <h2>Web Developer</h2>
+                    <p>React | ASP.NET MVC | Bootstrap </p>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- ==== Contact ==== -->
+    <div class="container" id="contact" name="contact">
+        <div class="row">
+            <br>
+            <h1 class="centered">CONTACT ME</h1>
+            <hr>
+            <br>
+            <br>
+
+            <div class="col-lg-6">
+                <h3>Contact Information</h3>
+                <p>
+                    <span class="icon icon-home"></span> Winnipeg, MB<br />
+                    <span class="icon icon-envelop"></span> ahmedshaikhnawaz@gmail.com
+
+                </p>
+
+                <p>
+                    <strong>
+                        Looking for my resume?
+                    </strong>
+                </p>
+                <form method="get" action="~/img/Resume-Ahmed.pdf">
+                    <button class="btn btn-large"
+                            type="submit">
+                        Click Here
+                    </button>
+                </form>
+
+            </div>
+            <!-- col -->
+            <div class="col-lg-5">
+                <h3>Contact Form</h3>
+                <form class="contact-form php-mail-form">
+
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Name" data-msg="Please enter at least 4 chars">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="contact-email" placeholder="Your Email" data-msg="Please enter a valid email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                        <div class="validate"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Send me a message"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-large">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- col -->
+        </div>
+        <!-- row -->
+    </div>
+
+    <!-- container -->
+    <div id="copyrights">
+        <div class="container">
+            <p>
+                &copy; Copyrights <strong>Ahmed</strong>. All Rights Reserved
+            </p>
+        </div>
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/php-mail-form/validate.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jqueryexercise.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="~/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SyntaxHighlighter.all();
+            $("#btn-ex1-code").click(function () {
+                $("#ex1-code").toggle();
+                if ($(this).text() == "Show Code") {
+                    $(this).text("Hide Code");
+                } else {
+                    $(this).text("Show Code");
+                }
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SyntaxHighlighter.all();
+            $("#btn-ex2-code").click(function () {
+                $("#ex2-code").toggle();
+                if ($(this).text() == "Show Code") {
+                    $(this).text("Hide Code");
+                } else {
+                    $(this).text("Show Code");
+                }
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SyntaxHighlighter.all();
+            $("#btn-ex3-code").click(function () {
+                $("#ex3-code").toggle();
+                if ($(this).text() == "Show Code") {
+                    $(this).text("Hide Code");
+                } else {
+                    $(this).text("Show Code");
+                }
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SyntaxHighlighter.all();
+            $("#btn-ex4-code").click(function () {
+                $("#ex4-code").toggle();
+                if ($(this).text() == "Show Code") {
+                    $(this).text("Hide Code");
+                } else {
+                    $(this).text("Show Code");
+                }
+            });
+        })
+    </script>
+</body>
+</html>
