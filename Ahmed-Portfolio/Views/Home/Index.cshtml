@@ -51,7 +51,6 @@
                         <li> <a href="#contact" class="smoothscroll"> Contact</a></li>
                     </ul>
                 </div>
-                <!--/.nav-collapse -->
             </div>
         </div>
     </div>
@@ -159,6 +158,7 @@
                                     <li><a data-toggle="pill" href="#ex4">Exercise 4</a></li>
                                 </ul>
 
+                                <!-- JS EXERCISE 1 -->
                                 <div class="tab-content">
                                     <div id="ex1" class="tab-pane fade in active">
                                         <div class="col-lg-6">
@@ -228,6 +228,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- JS EXERCISE 2 -->
                                     <div id="ex2" class="tab-pane fade">
                                         <div class="col-lg-6">
                                             <h3>Factorial</h3>
@@ -248,29 +249,28 @@
                                                 <button id="btn-ex2-code" class="btn btn-primary">Show Code</button>
                                                 <div id="ex2-code" style="display:none">
                                                     <pre class="brush:js;">
-                                                        $(document).ready(function() {
-                                                            $(".form-2").submit(function (e) {
-                                                                e.preventDefault();
+                                                        $(".form-2").submit(function (e) {
+                                                            e.preventDefault();
  
-                                                                var value = $("#value").val();
-                                                                function factorial(num) {
+                                                            var value = $("#value").val();
+                                                            function factorial(num) {
 
-                                                                if (parseInt(num) === 0) {
-                                                                    return 1;
-                                                                 }else{
-                                                                    return num * factorial(num - 1);
-                                                                 }
+                                                            if (parseInt(num) === 0) {
+                                                                return 1;
+                                                            }else{
+                                                                return num * factorial(num - 1);
+                                                            }
 
-                                                                let answer = factorial(value);
-                                                                $("#factorial-value").text(answer);
+                                                            let answer = factorial(value);
+                                                            $("#factorial-value").text(answer);
 
-                                                            });
                                                         });
                                                    </pre>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- JS EXERCISE 3 -->
                                     <div id="ex3" class="tab-pane fade">
 
                                         <div class="col-lg-6">
@@ -320,7 +320,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- JS EXERCISE 4 -->
                                     <div id="ex4" class="tab-pane fade">
                                         <div class="col-lg-6">
                                             <h3>Palindrome</h3>
@@ -342,26 +342,24 @@
                                                 <button id="btn-ex4-code" class="btn btn-primary">Show Code</button>
                                                 <div id="ex4-code" style="display:none">
                                                     <pre class="brush:js;">
-                                                        $(document).ready(function() {
-                                                            $(".form-4").submit(function (e) {
-                                                                e.preventDefault()
+                                                        $(".form-4").submit(function (e) {
+                                                            e.preventDefault()
 
-                                                                var text = $("#text").val();
+                                                            var text = $("#text").val();
 
-                                                                function palindromeCheck(string) {
-                                                                    var lowerString = string.toLowerCase();
-                                                                    var reverseString = lowerString.split('').reverse().join(''); 
+                                                            function palindromeCheck(string) {
+                                                                var lowerString = string.toLowerCase();
+                                                                var reverseString = lowerString.split('').reverse().join(''); 
 
-                                                                    if (reverseString === lowerString) {
-                                                                        return "it is a palindrome"
-                                                                    } else {
-                                                                        return "It is not a palindrome"
-                                                                    }
-                                                                 }
+                                                                if (reverseString === lowerString) {
+                                                                    return "it is a palindrome"
+                                                                } else {
+                                                                    return "It is not a palindrome"
+                                                                }
+                                                                }
 
-                                                                let result = palindromeCheck(text);
-                                                                $("#word-check").text(result);
-                                                            });
+                                                            let result = palindromeCheck(text);
+                                                            $("#word-check").text(result);
                                                         });
                                                   </pre>
                                                 </div>
@@ -379,18 +377,14 @@
                     </div>
                 </div>
 
-
                 <!-- PORTFOLIO PROJECT 2 -->
                 <div class="col-md-4">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive" src="~/img/portfolio/folio02.jpg" alt="">
-
                             <figcaption>
-
                                 <a href="https://ahmedshaikh09.github.io/Arcade-Game/" class="btn btn-primary btn-lg">Play Now!</a>
                             </figcaption>
-
                         </figure>
                         <div class=" centered">
                             <h3>Arcade Game</h3>
@@ -407,10 +401,8 @@
                         <figure>
                             <img class="img-responsive" src="~/img/portfolio/folio03.jpg" alt="">
                             <figcaption>
-
                                 <a href="https://ahmedshaikh09.github.io/Restaurant-Reviews-App-FinalProject/" class="btn btn-primary btn-lg">Take a Look</a>
                             </figcaption>
-
                         </figure>
                         <div class=" centered">
                             <h3>Resturant Reviews App</h3>
@@ -429,22 +421,15 @@
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive" src="~/img/portfolio/folio04.jpg" alt="">
-
-
                             <figcaption>
-
                                 <a href="https://github.com/ahmedshaikh09/My-Reads" class="btn btn-primary btn-lg">Check Out Code</a>
                             </figcaption>
-
                         </figure>
-
                         <div class=" centered">
                             <h3>My Reads</h3>
                             <p>React | JavaScript</p>
                         </div>
-
                     </div>
-
                 </div>
 
                 <!-- PORTFOLIO PROJECT 5 -->
@@ -473,11 +458,13 @@
                         <figure>
                             <img class="img-responsive" src="~/img/portfolio/folio06.jpg" alt="">
                             <figcaption>
-                                <h5>PHONE MOCKUP</h5>
-                                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+
+                                <a href="https://ahmedshaikh09.github.io/Web-development-using-HTML-and-CSS/" class="btn btn-primary btn-lg">Take a Look</a>
                             </figcaption>
 
                         </figure>
+                        <h3>Web Development</h3>
+                        <p>HTML | CSS</p>
 
                     </div>
 
@@ -491,7 +478,6 @@
         <br>
     </div>
 
-    <!-- /container -->
     <!-- ==== SKILLS ==== -->
     <div class="container" id="pricing" name="pricing">
         <br>
@@ -563,7 +549,7 @@
                 </form>
 
             </div>
-            <!-- col -->
+            <!-- Send an email -->
             <div class="col-lg-5">
                 <h3>Contact Form</h3>
                 <form class="contact-form php-mail-form">
@@ -608,9 +594,12 @@
     <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/lib/php-mail-form/validate.js"></script>
     <script src="~/lib/easing/easing.min.js"></script>
+    <!-- JavaScript File for Exercises -->
     <script type="text/javascript" src="~/Scripts/jqueryexercise.js"></script>
     <!-- Template Main Javascript File -->
     <script src="~/js/main.js"></script>
+    <!-- Previewing code for javascript Exercises -->
+    <!-- FOR JS EXERCISE 1 -->
     <script type="text/javascript">
         $(document).ready(function () {
             SyntaxHighlighter.all();
@@ -624,6 +613,7 @@
             });
         })
     </script>
+    <!-- FOR JS EXERCISE 2 -->
     <script type="text/javascript">
         $(document).ready(function () {
             SyntaxHighlighter.all();
@@ -637,6 +627,7 @@
             });
         })
     </script>
+    <!-- FOR JS EXERCISE 3 -->
     <script type="text/javascript">
         $(document).ready(function () {
             SyntaxHighlighter.all();
@@ -650,6 +641,7 @@
             });
         })
     </script>
+    <!-- FOR JS EXERCISE 4 -->
     <script type="text/javascript">
         $(document).ready(function () {
             SyntaxHighlighter.all();
